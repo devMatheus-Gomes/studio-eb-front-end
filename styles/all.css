@@ -1,9 +1,45 @@
 /* Color All */
-*{
+/* *{
+  background-color: #454745;
+} */
+
+body{
   background-color: #454745;
 }
 
-/* Color box All */
-.box{
-  background-color: #312F2F;
+.box-min{
+  width: 700px;
+  height: 500px;
+  background-color: #2b2c2b;
+  margin: 150px ;
+  float: right;
 }
+
+.img-machine{
+  width: 500px;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 150px;
+
+}
+.form-group{
+  color:  #6A6969;
+  align-items: center;
+margin: 90px auto;  
+}
+.form-group .form-control{
+  text-align: center;
+  width: 90%;
+  align-items: center;
+  background-color: #454745  ;
+  color: #8b8a8a;
+}
+.row{
+  color:  #6A6969;
+  align-items: center;
+ margin: 90px auto;
+
+  width: 350px;
+  float: left;
+}
+
