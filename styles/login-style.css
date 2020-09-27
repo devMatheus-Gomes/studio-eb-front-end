@@ -1,0 +1,142 @@
+
+
+body{
+    background-color:#6D6C6C ;
+}
+.box-max{
+background-color: #4F4F4F;
+width: 675px;
+height: 500px;
+}
+
+.box-max  .one{
+    text-align: center;
+    font-size: 60px;
+    color: #9D9D9D;
+    letter-spacing: 25px;
+}
+.text .one{
+   padding-top: 40px;
+   font-family: 'Raleway' ;
+   animation: slideRight 1.5s ease;
+
+   z-index: 10;
+
+}
+
+@keyframes slideRight{
+    0%{transform: translateY(80%);opacity: 0;}
+    100%{transform: translateY();opacity: 1;}}
+    @keyframes slideRight{
+        0%{transform: translateX(10%);opacity: 0;}
+        100%{transform: translateX(25%);opacity: 1;}
+    } 
+
+
+.box-max  .two{
+    text-align: center;
+    font-size: 70px;
+    color: #44A1C2;
+    letter-spacing: 7px;
+    animation: slideRight 1.5s ease;
+
+    z-index: 10;
+    
+}
+
+.text .two{
+    padding-top: 30px;
+    font-family: 'Raleway' ;
+    animation: slideRight 1.5s ease;
+
+    z-index: 10;
+
+
+}
+
+@keyframes slideRight{
+    0%{transform: translateY(100%);opacity: 0;}
+    100%{transform: translateY();opacity: 1;}}
+    @keyframes slideRight{
+        0%{transform: translateX(100%);opacity: 0;}
+        100%{transform: translateX(0%);opacity: 1;}
+    } 
+
+
+.box-max  .tree{
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+    animation: slideRight 1.5s ease;
+
+    z-index: 10;
+}
+.text .tree{
+    padding-top: 10px;
+    font-family: 'Raleway' ;
+    animation: slideRight 1.5s ease;
+
+    z-index: 10;
+}
+
+@keyframes slideRight{
+    0%{transform: translateY(100%);opacity: 0;}
+    100%{transform: translateY();opacity: 1;}}
+    @keyframes slideRight{
+        0%{transform: translateX(100%);opacity: 0;}
+        100%{transform: translateX(0%);opacity: 1;}
+    } 
+
+
+.logo-memo{
+    width: 178px;
+    height: 150px;
+margin-top: -10px;    
+}
+
+.box-min {
+    width: 375px;
+    float:right;
+    margin-top: -450px;
+    align-items: center;
+}
+
+
+.inst{
+    width: 15%;
+    margin-left: 110px ;
+}
+.devmemo{
+    width: 15%;
+
+}
+.box-min .work{
+    color: #44A1C2;
+    font-family: 'Raleway';
+    font-size: 48px;
+margin-left: 45px;
+}
+
+.form-group .form-control{
+    color: #44A1C2;
+    margin-top: 35px;
+    margin-left: 22px;
+    width: 80%;
+    align-items: center;
+    background-color: #4F4F4F;
+
+}
+
+.forgot{
+margin-left: 90px;}
+
+#bot{
+    margin-left: 110px;
+    background-color: #44A1C2;
+    border: none;
+    
+    }
+
+    #bot:hover{
+        background-color: #70d2ff;
+    }
