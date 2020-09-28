@@ -1,63 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/login-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/src/images/urso-pardo.png" type="image/x-icon">
+    <title>Login</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles/login-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
-
 <body>
-    <div class="box-max">
-        <div class="text">
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado conosco
+                </p>
+                <p class="description description-primary">Por favor faça o login com suas informações pessoais
+                </p>
+                <button id="signin" class="btn btn-primary">sign in</button>
 
-            <p class="one">WELCOME TO</p>
-            <p class="two">D E V M E M O</p>
-            <p class="tree">SOFTWARE</p>
-        </div>
-        <img class="logo-memo" src="/src/images/urso-pardo.png">
-    </div>
-    <div class="box-min">
-        <p class="work">Go To Work</p>
-        <div class="icons">
-            <img class="inst" src="/src/images/38-instagram-3-512.webp">
-            <img class="devmemo" src="/src/images/38-instagram-3-512.webp">
-        </div>
-        <form>
-            <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="*E-mail">
+                <div class="logo"><img src="/images/urso-pardo-branco.png" alt=""></div>
+
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar Conta</h2>
+                <p class="description description-second">Digite Seus dados para começar</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Name">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">sign up</button>        
+                </form>
+                
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Seja Bem Vindo</h2>
+                <p class="description description-primary">
+                    Insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a jornada conosco<p>
+                <button id="signup" class="btn btn-primary">sign up</button>
+                <div class="logo"><img src="/images/urso-pardo-branco.png" alt=""></div>
             </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*Senha">
-            </div>
-            <p class="forgot">Esqueceu sua senha?</p>
-            <button id="bot" class="btn btn-primary" type="submit"><svg width="90px" height="20px" viewBox="0 0 16 16"
-                    class="bi bi-chevron-double-right" fill="black" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                        d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
-                    <path fill-rule="evenodd"
-                        d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
-                </svg></button>
+            <div class="second-column">
+                <h2 class="title title-second">Go to Work</h2>
+                <div class="social-media">
+                </div><!-- social media -->
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Password">
+                    </label>
+                
+                    <a class="password" href="#">forgot your password?</a>
+                    <button class="btn btn-second"><a href="/src/initial-page.html">sign in</a></button>
+                </form>
+                
+            </div><!-- second column -->
+        </div><!-- second-content -->
     </div>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
 </body>
-
 </html>

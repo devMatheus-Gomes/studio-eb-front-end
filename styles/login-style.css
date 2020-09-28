@@ -1,142 +1,426 @@
-
-
-body{
-    background-color:#6D6C6C ;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.box-max{
-background-color: #4F4F4F;
-width: 675px;
-height: 500px;
-}
-
-.box-max  .one{
-    text-align: center;
-    font-size: 60px;
-    color: #9D9D9D;
-    letter-spacing: 25px;
-}
-.text .one{
-   padding-top: 40px;
-   font-family: 'Raleway' ;
-   animation: slideRight 1.5s ease;
-
-   z-index: 10;
-
+body {
+    font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes slideRight{
-    0%{transform: translateY(80%);opacity: 0;}
-    100%{transform: translateY();opacity: 1;}}
-    @keyframes slideRight{
-        0%{transform: translateX(10%);opacity: 0;}
-        100%{transform: translateX(25%);opacity: 1;}
-    } 
-
-
-.box-max  .two{
-    text-align: center;
-    font-size: 70px;
-    color: #44A1C2;
-    letter-spacing: 7px;
-    animation: slideRight 1.5s ease;
-
-    z-index: 10;
-    
+h2,p{
+    font-family: 'Raleway', sans-serif;
 }
 
-.text .two{
-    padding-top: 30px;
-    font-family: 'Raleway' ;
-    animation: slideRight 1.5s ease;
-
-    z-index: 10;
-
-
-}
-
-@keyframes slideRight{
-    0%{transform: translateY(100%);opacity: 0;}
-    100%{transform: translateY();opacity: 1;}}
-    @keyframes slideRight{
-        0%{transform: translateX(100%);opacity: 0;}
-        100%{transform: translateX(0%);opacity: 1;}
-    } 
-
-
-.box-max  .tree{
-    text-align: center;
-    font-size: 24px;
-    color: #ffffff;
-    animation: slideRight 1.5s ease;
-
-    z-index: 10;
-}
-.text .tree{
-    padding-top: 10px;
-    font-family: 'Raleway' ;
-    animation: slideRight 1.5s ease;
-
-    z-index: 10;
-}
-
-@keyframes slideRight{
-    0%{transform: translateY(100%);opacity: 0;}
-    100%{transform: translateY();opacity: 1;}}
-    @keyframes slideRight{
-        0%{transform: translateX(100%);opacity: 0;}
-        100%{transform: translateX(0%);opacity: 1;}
-    } 
-
-
-.logo-memo{
-    width: 178px;
-    height: 150px;
-margin-top: -10px;    
-}
-
-.box-min {
-    width: 375px;
-    float:right;
-    margin-top: -450px;
+.container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
 }
-
-
-.inst{
-    width: 15%;
-    margin-left: 110px ;
-}
-.devmemo{
-    width: 15%;
-
-}
-.box-min .work{
-    color: #44A1C2;
-    font-family: 'Raleway';
-    font-size: 48px;
-margin-left: 45px;
-}
-
-.form-group .form-control{
-    color: #44A1C2;
-    margin-top: 35px;
-    margin-left: 22px;
-    width: 80%;
+.content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    width: 960px;
+    height: 72%;
+    justify-content: space-between;
     align-items: center;
-    background-color: #4F4F4F;
-
+    position: relative;
 }
-
-.forgot{
-margin-left: 90px;}
-
-#bot{
-    margin-left: 110px;
+.content::before {
+    content: "";
+    position: absolute;
     background-color: #44A1C2;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary {
+    color: #fff;
+}
+.title-second {
+    color: #44A1C2;
+}
+.description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: #fff;
+}
+.description-second {
+    color: #7f8c8d;
+}
+.btn {
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 150px;
+    align-self: center;
     border: none;
-    
+    margin-top: 1rem;
+}
+.btn-primary {
+    background-color: transparent;
+    border: 1px solid #fff;
+    transition: background-color .5s;
+}
+.btn-primary:hover {
+    background-color: #fff;
+    color:#44A1C2;
+}
+.btn-second {
+    background-color: #44A1C2;
+    border: 1px solid #44A1C2;
+    transition: background-color .5s;
+}
+
+.btn-second a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-second:hover {
+    background-color: #fff;
+    border: 1px solid #44A1C2;
+    color: #44A1C2;
+}
+
+.btn-second:hover a {
+    color: #44A1C2;
+}
+
+.first-content {
+    display: flex;
+}
+.first-content .second-column {
+    z-index: 11;
+}
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.logo img{
+    margin-top: 21px;
+}
+
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media {
+    margin: 1rem 0;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #44A1C2;
+    color: #fff;
+    border-color: #44A1C2;
+}
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media {
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #44A1C2;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+.label-input {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify {
+    color: #44A1C2;
+    padding: 0 5px;
+}
+
+/* second content*/
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+.password {
+    color: #44A1C2;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+
+
+.sign-in-js .first-content .first-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before {
+    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+    z-index: 13;    
+}
+
+
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
+.sign-in-js .first-content .second-column {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
     }
 
-    #bot:hover{
-        background-color: #70d2ff;
+    25% {
+        left: -80px;
+        opacity: .5;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
     }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+    }
+
+    50% {
+        left: 100px;
+        /* z-index: 12; NÃO HÁ NECESSIDADE*/
+        /* background-color: yellow;  Exemplo que dei no vídeo*/
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+/*ANIMAÇÃO CSS*/
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
